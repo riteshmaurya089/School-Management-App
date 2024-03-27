@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Installation
+Run the following command to clone the repository
+```
+back-end github link: https://github.com/riteshmaurya089/schoolbackend
+front-end github link: https://github.com/riteshmaurya089/School-Management-App
+```
+Go to ```frontend``` and ```backend``` directory to install packages
+```
+cd frontend
+npm install
+```
+```
+cd backend
+npm install
+```
+# Configuration
+Create ```.env``` file inside ```backend``` directory and copy the following code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+MONGO_DB_URL=your mongodb url
+PORT=5000
+JWT_SECRET=a random secret key eg.secretkey
+FRONTEND_URL= your frontend URL eg http://localhost:5173
 
-## Available Scripts
+create account on cloudinary and obtain the following data
 
-In the project directory, you can run:
+CLOUDINARY_CLOUD_NAME=enter cloud name
+CLOUDINARY_API_KEY=enter key
+CLOUDINARY_API_SECRET=enter API secret
 
-### `npm start`
+GOOGLE_USERNAME=your gmail address
+GOOGLE_PASSWORD=password created inside 'App Password' section under google accounts setting
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SERVICE=Gmail
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+Create ```config.js``` file inside ```frontend``` directory and copy the following code
+```
+const API_URL='backend url'
+export {API_URL}
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Run the App
+Go to ```backend``` and ```frontend``` directory and start the server
+```
+cd backend
+nodemon server
+```
+```
+cd frontend
+npm run start
+```
+# Live Preview
+Check live preview here [https://school-management-app-lemon.vercel.app/](https://school-management-app-lemon.vercel.app/)
